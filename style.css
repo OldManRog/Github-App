@@ -49,7 +49,6 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   padding: 3rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   max-width: 800px;
@@ -91,15 +90,27 @@ img {
 
 
 
-.user-info li:hover {
-  list-style-type: none;
-  color: #c1accc;
-}
 
 #repos {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 500PX;
 }
 
+.repo {
+  background-color: #a73053;
+  border-radius: 10px;
+  padding: 7px;
+  cursor: pointer;
+  display: inline-block;
+  color: aliceblue;
+  text-decoration: none;
+  border: #630f1d solid 1px;
+  border-bottom: #630f1d solid 5px;
+}
+
+.repo:hover {
+ color: #e5e4e2;
+}

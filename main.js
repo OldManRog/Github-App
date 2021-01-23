@@ -82,7 +82,8 @@ function displayUserDataOnUserCard(user) {
             
             <li><i class="fas fa-code"></i> ${user.public_repos} </li>            
         </ul>
-
+        
+        <h4>Projects:<h4>
         <div id="repos">  </div>
    </div>
    </div>
@@ -107,7 +108,7 @@ function displayRepoDataOnUserCard(repos) {
     /* we named the array within the object, repos, and for each repo in repos,
      we want to create an a tag in order to include a link. For each 
      a tag we also want to add the class repo. we do this by using a const called repoEl. 
-     We then specify what is the HTML we want inside the repoEl. 
+     We then specify the innerText AND href we want inside the repoEl. 
      Finally we can then append the repoEL which is the a tag that was created for each repo in the repos array,
      and append each one to the reposEl, which is the parent div */
     repos.forEach(repo => {
@@ -116,8 +117,11 @@ function displayRepoDataOnUserCard(repos) {
 
         console.log(repoEl)
 
+        /* This is the link we want inside the <a> tag*/
         repoEl.href = repo.html_url;
+        /* This is allows the link to opened in another tab*/
         repoEl.target = "_blank";
+        /* This is the text we want inside the <a> */
         repoEl.innerText = repo.name;
     
        reposEl.appendChild(repoEl) 
