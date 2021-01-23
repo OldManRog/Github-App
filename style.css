@@ -109,6 +109,7 @@ img {
   text-decoration: none;
   border: #630f1d solid 1px;
   border-bottom: #630f1d solid 5px;
+  margin: 5px;
 }
 
 .repo:hover {
