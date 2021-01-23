@@ -116,11 +116,10 @@ function displayRepoDataOnUserCard(repos) {
 
         console.log(repoEl)
 
-        repoEl.innerHTML = 
-        ` 
-        <h1> hello </h1>
-
-        ` 
+        repoEl.href = repo.html_url;
+        repoEl.target = "_blank";
+        repoEl.innerText = repo.name;
+    
        reposEl.appendChild(repoEl) 
     })
    
