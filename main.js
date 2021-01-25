@@ -111,7 +111,9 @@ function displayRepoDataOnUserCard(repos) {
      We then specify the innerText AND href we want inside the repoEl. 
      Finally we can then append the repoEL which is the a tag that was created for each repo in the repos array,
      and append each one to the reposEl, which is the parent div */
-    repos.slice(0,10).forEach(repo => {
+    repos
+    .sort((a,b) => a.stargazers_count - b.stargazers_count)
+    .slice(0,10).forEach(repo => {
         const repoEl = document.createElement('a')
         repoEl.classList.add('repo')
 
