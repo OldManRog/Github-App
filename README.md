@@ -1,5 +1,5 @@
 # Github-App
-Github App from @florinpop17 
+App originally from @florinpop17 - I am using for learning, and may add my own tweaks and features from styling to functionality.
 
 **icons** 
 Font Awesome
